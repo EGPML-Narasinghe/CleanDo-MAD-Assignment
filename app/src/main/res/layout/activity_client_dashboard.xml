@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.cleando.client.client_dashboard">
+
+
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Clean Do"
+            android:textColor="#478DF6"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                android:id="@+id/btn_logout_client"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_logout"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Customer Dashboard"
+            android:textColor="#B3B2B0"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/btn_cart_client"
+            android:background="@drawable/login_button_red"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textAlignment="textStart"
+            android:drawablePadding="10dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:drawableStart="@drawable/ic_cart"
+            android:text="On-Going Jobs"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Available Jobs"
+            android:textColor="#B3B2B0"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/client_rview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
